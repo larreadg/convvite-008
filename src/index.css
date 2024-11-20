@@ -1,0 +1,202 @@
+:root {
+  --bg-color: #e0e0e0;
+  --primary-color: #de47b3;
+  --secondary-color: #efb810;
+  --tertiary-color: #000;
+  --container-padding: 2.5rem;
+  --border-radius: 0.5rem;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('./assets/fonts/Raleway.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Halimun';
+  src: url('./assets/fonts/Halimun.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*, 
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.mapIcon, .messageIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.container {
+  padding: var(--container-padding);
+}
+
+.gold {
+  background: linear-gradient(45deg, #d4af37, #ffd700, #b8860b, #ffcc33);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #ffd700;
+}
+
+/* PORTADA */
+
+.portada {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.portada .portada-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+  width: 100%;
+  min-height: calc(100vh - calc(2 * var(--container-padding)));
+  border-radius: var(--border-radius);
+  border: 8px solid var(--secondary-color);
+  gap: 2rem;
+  padding: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.portada .rs1 {
+  position: absolute;
+  top: -2rem;
+  left: -2rem;
+  width: 50%;
+  height: auto;
+}
+
+.portada .rs2 {
+  position: absolute;
+  top: -2rem;
+  right: -2rem;
+  width: 50%;
+  height: auto;
+  z-index: 0;
+}
+
+.portada .rs3 {
+  bottom: -3rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+
+.portada .portada-body .img-23 {
+  width: 80%;
+  height: auto;
+}
+
+.portada .portada-body .text-23 p {
+  font-family: 'Raleway';
+  font-size: 8rem;
+  color: var(--primary-color);
+  font-weight: 900;
+  margin: 0;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.portada .portada-body .text {
+  font-family: 'Raleway';
+  color: var(--primary-color);
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.portada .portada-body .araceli {
+  font-family: 'Halimun';
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 2.5;
+  font-weight: bold;
+}
+
+.portada .portada-body .fecha {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.portada .portada-body .fecha p {
+  font-family: 'Raleway';
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.portada .portada-body .fecha .dia_num p {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.portada .portada-body .fecha .dia p, .portada .portada-body .fecha .mes p {
+  font-family: 'Raleway';
+  color: var(--secondary-color);
+  padding: 0.5rem 0.25rem;
+  border-top: 2px solid var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  font-size: 1rem;
+}
+
+.portada .portada-body .confirmar-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  width: 100%;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.portada .portada-body .confirmar-btn p {
+  font-family: 'Raleway';
+  color: var(--bg-color);
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.portada .portada-body .confirmar-btn-outlined {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  width: 100%;
+  background-color: var(--bg-color);
+  border: none;
+  border-radius: var(--border-radius);
+  border: 2px solid var(--secondary-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.portada .portada-body .confirmar-btn-outlined p {
+  font-family: 'Raleway';
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+/* END PORTADA */
+
