@@ -1,8 +1,8 @@
 :root {
   --bg-color: #e0e0e0;
-  --primary-color: #de47b3;
+  --primary-color: #722C32;
   --secondary-color: #efb810;
-  --tertiary-color: #000;
+  --tertiary-color: #FF7DAC;
   --container-padding: 2.5rem;
   --border-radius: 0.5rem;
 }
@@ -64,13 +64,12 @@
   align-items: center;
   background-color: var(--bg-color);
   width: 100%;
-  min-height: calc(100vh - calc(2 * var(--container-padding)));
+  min-height: calc(100vh - 7rem);
   border-radius: var(--border-radius);
   border: 8px solid var(--secondary-color);
-  gap: 2rem;
-  padding: 1rem;
+  gap: 1rem;
+  padding: 1rem 1rem 6rem 1rem;
   position: relative;
-  overflow: hidden;
 }
 
 .portada .rs1 {
@@ -95,7 +94,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 100%;
+  width: 90vw;
   height: auto;
   z-index: 0;
 }
@@ -164,16 +163,17 @@
   gap: 0.5rem;
   padding: 0.5rem;
   width: 100%;
-  background-color: var(--primary-color);
+  background-color: var(--bg-color);
   border: none;
   border-radius: var(--border-radius);
+  border: 2px solid var(--tertiary-color);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 .portada .portada-body .confirmar-btn p {
   font-family: 'Raleway';
-  color: var(--bg-color);
+  color: var(--tertiary-color);
   font-weight: bold;
   font-size: 1.25rem;
 }
